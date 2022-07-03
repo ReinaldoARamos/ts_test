@@ -27,3 +27,11 @@ const Otavio: Estudante = {
     profissao: Profissao.desenvolvedora,
     materiais: ['Matematica']
 }
+
+function listar(lista:string[]) {
+    for (const item of lista) {
+        console.log('-', item)
+    }
+}
+
+listar(Otavio.materiais)

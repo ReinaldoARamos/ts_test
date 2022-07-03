@@ -16,3 +16,9 @@ const Otavio = {
     profissao: Profissao.desenvolvedora,
     materiais: ['Matematica']
 };
+function listar(lista) {
+    for (const item of lista) {
+        console.log('-', item);
+    }
+}
+listar(Otavio.materiais);

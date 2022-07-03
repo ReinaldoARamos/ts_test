@@ -1,19 +1,12 @@
 "use strict";
-let button = document.getElementById('button');
-let input1 = document.getElementById('input1');
-let input2 = document.getElementById('input2');
-function Adicionar(number1, number2, devePrint, frase) {
-    let resultado = number1 + number2;
-    console.log(frase + resultado);
-    return number1 + number2;
+function somarValores(input1, input2) {
+    if (typeof input1 === 'string' || typeof input2 === 'string') {
+        return input1.toString() + input2.toString();
+    }
+    else {
+        return input1 + input2;
+    }
 }
-let devePrint = true;
-let frase;
-frase = "o valor é ";
-if (button) {
-    button.addEventListener('click', () => {
-        if (input1 && input2) {
-            console.log(Adicionar(Number(input1.value), Number(input2.value), devePrint, frase));
-        }
-    });
-}
+console.log(somarValores(1, 5));
+console.log(somarValores('ola ', 'tudo bem'));
+console.log(somarValores(1, 5));
