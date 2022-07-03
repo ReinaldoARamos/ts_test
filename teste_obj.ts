@@ -11,9 +11,19 @@ profissao?: Profissao
 
 }
 
+interface Estudante extends Pessoa {
+    materiais: string[];
+}
 const maria: Pessoa = {
     nome: 'maria',
     idade: 23,
     profissao: Profissao.desenvolvedora,
+    
+}
 
+const Otavio: Estudante = {
+    nome: 'maria',
+    idade: 23,
+    profissao: Profissao.desenvolvedora,
+    materiais: ['Matematica']
 }

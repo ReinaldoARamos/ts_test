@@ -10,3 +10,9 @@ const maria = {
     idade: 23,
     profissao: Profissao.desenvolvedora,
 };
+const Otavio = {
+    nome: 'maria',
+    idade: 23,
+    profissao: Profissao.desenvolvedora,
+    materiais: ['Matematica']
+};
