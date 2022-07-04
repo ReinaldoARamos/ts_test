@@ -1,16 +1,17 @@
 "use strict";
-function printaValue(number1, number2) {
-    console.log(number1 + number2);
+let anyesta;
+let stringtest = 'verificar';
+stringtest = anyesta;
+let unknowValue;
+unknowValue = '4';
+unknowValue = 'opa';
+unknowValue = true;
+unknowValue = 'vai';
+let stringtest2 = 'agora vai';
+if (typeof unknowValue === 'string') {
+    stringtest2 = unknowValue;
 }
-function SomarValoresNumericosTratar(numero1, number2, callback) {
-    let resultado = numero1 + number2;
-    return callback(resultado);
+function jogaERro(erro, codigo) {
+    throw { error: erro, code: codigo };
 }
-function aoquadrado(number) {
-    return number * number;
-}
-function dividirPorele(number) {
-    return number / number;
-}
-console.log(SomarValoresNumericosTratar(1, 3, aoquadrado));
-console.log(SomarValoresNumericosTratar(1, 3, dividirPorele));
+jogaERro('deu erro', 500);
